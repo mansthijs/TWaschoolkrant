@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personeel Toegang</title>
+    <script>
+        function checkAccessCode() {
+            const accessCode = document.getElementById('access-code').value;
+            const correctCode = '230467';
+            if (accessCode === correctCode) {
+                window.location.href = 'https://https://sites.google.com/walexanderschool.nl/schoolkrantstaff/trainingbestanden'; // Vervang dit door de URL van de doelpagina
+            } else {
+                alert('Onjuiste toegangscode. Probeer het opnieuw.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="login-form">
+        <h2>Voer Toegangscode In</h2>
+        <input type="password" id="access-code" placeholder="Toegangscode">
+        <button onclick="checkAccessCode()">Verzenden</button>
+    </div>
+</body>
+</html>
